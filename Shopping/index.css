@@ -1,0 +1,304 @@
+body{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    height: 100%;
+    background-image: url(https://files.123freevectors.com/wp-content/original/182089-light-blue-abstract-graphic-background-vector-image.jpg);
+    background-size: cover;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    display: block;
+}
+#nav
+{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(green,yellow,blue);
+    border-radius: 5px;
+    position: fixed;
+    float: left;
+}
+#shop
+{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#shop:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#man
+{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#man:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#women
+{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#women:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#kids
+{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#kids:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#electronics
+{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#electronics:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#search{
+height: 30px;
+width: 270px;
+margin-top: 10px;
+margin-left: -2px;
+border: 2px solid black;
+float: left;
+}
+#create_account
+{
+    height: 30px;
+    width: 170px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#create_account:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#login
+{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+}
+#login:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(6, 6, 6);
+    color: rgb(0, 0, 0);
+}
+#main
+{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    margin-top: 50px;
+    float: left;
+}
+.lowest
+{
+    height: 400px;
+    width: 600px;
+    background-color: rgb(234, 253, 252);
+    font-size: 40px;
+    margin-left: 45px;
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 50px;
+    float: left;
+}
+#quality
+{
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 10px;
+    float: left;
+}
+.free
+{
+    height: 50px;
+    width:130px;
+    margin-left: 25px;
+    float: left;
+}
+.text
+{
+    height: 40px;
+    width: 90px;
+    font-size: 17px;
+    border-right: 2px solid black;
+    margin-top: 5px;
+    float: right;
+}
+#play
+{
+height: 50px;
+width: 350px;
+background-color: rgb(197, 9, 197);
+margin-top: 50px;
+border-radius: 5px;
+float: left;
+}
+.download
+{
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+    margin-right: -10px;
+    margin-top: 15px;
+    color: white;
+    float: right;
+}
+#play:hover
+{
+    cursor: pointer;
+}
+#im
+{
+    height: 400px;
+    width: 600px;
+    background-image: url(https://freedesignfile.com/upload/2021/05/Woman-online-shopping-illustrator-vector.jpg);
+    margin-top: 50px;
+    background-size: contain;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: left;
+}
+#categories
+{
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 50px;
+    font-size: 40px;
+    float: left;
+}
+#im1
+{
+    height: 600px;
+    width: 1200px;
+    background-image: url(https://xmple.com/wallpaper/pink-blue-gradient-linear-6016x3384-c2-87cefa-ffb6c1-a-285-f-14.svg);
+    background-size: cover;
+    margin-left: 45px;
+    margin-top: 50px;
+    border-radius: 10px;
+    float: left;
+}
+.text1
+{
+    height: 50px;
+    width: 500px;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-right: 70px;
+    float: right;
+}
+#im2
+{
+    height: 600px;
+    width: 1200px;
+    background-image: url(https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp);
+    background-size: cover;
+    margin-left: 45px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-top: 150px;
+    padding-left: 600px;
+    float: left;
+}
+#p
+{
+    height: 1500px;
+    width:1250px;
+    margin-left: 20px;
+    font-size: 18px;
+    float: left;
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cocochan.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="index.html"><button id="shop"><b>Shop Now</b></button></a>
+        <a href="oggy.html"><button id="man"><b>Man</b></button></a>
+        <a href="motu.html"><button id="women"><b>Women</b></button></a>
+        <a href="patlu (2).html"><button id="kids"><b>Kids</b></button></a>
+        <a href="gojo.html"><button id="electronics"><b>Electronics</b></button></a>
+        <img src="https://toppng.com/uploads/preview/search-icon-icon-11553428131chipvliqou.png" style="height: 30px; width: 30px; border: 2px solid black; background-size: cover; margin-top: 10px;border-top-left-radius: 5px;border-bottom-left-radius: 5px; margin-left: 10px; float: left;">
+        <input type="search" placeholder="Search" id="search">
+        <img src="data:image/png;base64,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" style="height: 30px; width: 25px; background-size: cover; margin-top: 10px;float: left;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border: 2px solid black;border-left: 0px;">
+        <a href="create_account.html"><button id="create_account"><b>Create Account</b></button></a>
+        <a href="login.html"><button id="login"><b>Login</b></button></a>
+</div>
+<div id="main">
+<div class="lowest"><b>Lowest Prices<br>
+    Best Quality Shopping</b>
+    <div id="quality">
+<div class="free"><img src="https://images.meesho.com/images/pow/freeDelivery_jamun.svg" style="margin-top: 10px;margin-left: 8px;">
+<div class="text"><b>Free <br>Delivery</b></div>  
+</div>  
+<div class="free"><img src="https://images.meesho.com/images/pow/cod_jamun.svg" style="margin-top: 10px;margin-left: 8px;">
+<div class="text"><b>Cash on <br>Delivery</b></div>  
+</div>  
+<div class="free"><img src="https://images.meesho.com/images/pow/easyReturns_jamun.svg" style="margin-top: 10px; margin-left: 8px;">
+<div class="text"><b>Easy <br>Returns</b></div>  
+</div>       
+    </div>
+<div id="play"><img src="https://images.meesho.com/images/pow/playstoreSmallIcon.png" style="margin-left: 20px; margin-top: 10px;">
+<div class="download"><b>Download the Shopping App</b></div>
+</div>
+</div>
+<div id="im"></div>
+</div>
+<div id="categories"><b>Top Categories to choose from</b></div>
+<div id="im1"> 
+    <div class="text1"><b>Be fashion forward</b></div>
+    <a href="motu.html"><img src="https://images.meesho.com/images/marketing/1692190996099_400.webp" style="margin-top:100px; margin-left: 70px; float: left;"></a>
+    <a href="oggy.html"><img src="https://images.meesho.com/images/marketing/1678691699680_300.webp" style="margin-top: 43px; margin-left: 20px;"></a>
+    <a href="patlu (2).html"><img src="https://images.meesho.com/images/marketing/1678691712594_300.webp" style="margin-left: 20px;"></a>  
+</div>
+<div id="im2"><font style="font-size: 40px; color: blue;">Become a Reseller and<br><br></font>
+<font style="font-size: 45px; color: rgb(113, 3, 135);"><b> Start your Online Business<br> with Zero Investment</b></font>
+<img src="https://images.meesho.com/images/pow/playstoreIcon_500.webp" style="height: 40px; width: 170px; margin-top: 50px; margin-left: 80px;border-radius: 5px;"> 
+<img src="https://images.meesho.com/images/pow/appstoreIcon_500.webp" style="height: 40px; width: 170px; margin-top: 50px; margin-left: 50px;border-radius: 5px;">  
+</div>
+<div class="abc" id="c1">
+    <img src="https://m.media-amazon.com/images/I/61NGxszzNgL._UX679_.jpg">
+    ₹1,281 NPLASH FASHION Womens Silk Saree
+        <h5 class="jk">Free Size</h5>
+
+        <input type="button" value="Buy now" class="s" id="w">
+        <input type="button" value="Add to card" class="s" id="w" >
+    
+</div>
+<div class="abc" id="c2">
+    <img src="https://img3.junaroad.com/uiproducts/18322144/zoom_0-1649265274.jpg">
+    ₹759 Jacquard Work Banarasi Saree With Blouse
+    <h5 class="jk">Free Size</h5>
+  
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >  </div>
+<div class="abc" id="c3">
+    <img src="https://webmerx.sgp1.cdn.digitaloceanspaces.com/goldenbiz/product_images/AP5XvAsfMT-1683865993.webp">
+    ₹899 Beautiful Pretty Weddding Kurti With Dupatta
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://img.perniaspopupshop.com/catalog/product/p/a/PAHC1121163_1.jpg?impolicy=detailimageprod">
+    ₹32400 Party wear lehenga with Dupatta
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://m.media-amazon.com/images/I/412e6QcoUrL.jpg">
+    ₹450 Shirts for Girls Long Sleeve Office Work Wear
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c1">
+    <img src="https://m.media-amazon.com/images/I/71yM0xUAetL._UX679_.jpg">
+    ₹472 IndoPrimo Men's Regular Fit Casual Shirt
+  
+        <h5 class="jk">Select Size:</h5>
+    
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+        <input type="button" value="Buy now" class="s" id="w">
+        <input type="button" value="Add to card" class="s" id="w" >
+    
+</div>
+<div class="abc" id="c2">
+    <img src="https://m.media-amazon.com/images/I/41gHK7X52BL.jpg">
+    ₹790 Men's Regular Fit Cotton Casual Shirts
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >  </div>
+<div class="abc" id="c3">
+    <img src="https://m.media-amazon.com/images/I/71hC0hTVCDL._UY741_.jpg">
+    ₹425 Brothers Mens Regular Fit Lycra Pant
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://m.media-amazon.com/images/I/71YdE55GwjL._SX569_.jpg">
+    ₹25,299 White Sport Band Fitness & Sleep Tracker
+
+    <h5 class="jk">Free Size</h5>
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://m.media-amazon.com/images/I/41d7esn4QVL.jpg">
+    ₹999 Fancy & Stylish Block Heel sandals for Girls
+
+    <h5 class="jk">Select Size</h5>
+ 
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         5
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        6
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         10
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://m.media-amazon.com/images/I/41K+zyyjewL._SY300_SX300_.jpg">
+    ₹1,349 Display Smart Watch, Bluetooth Calling, for girls
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://m.media-amazon.com/images/I/61GQMXJ5J7L._UX679_.jpg">
+    ₹958 Leather Adjustable Belt with Lock Buckle Belt for Men 
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRgKfg5Z5NCLjmBhlGb-92zTcJWSXn6IsSaVBrmz1T2uJCRv6SdqNAhzhEkppesQuS32Bym_iga_qvzBjuH-wCPQsT8SfdVgDoLYOC3SLg&usqp=CAE">
+    ₹1,260 The Kundan Choker Necklace Set is a popular choice
+
+    <h5 class="jk">Free Size</h5>
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://m.media-amazon.com/images/I/41DPAf6CBGL.jpg">
+    ₹183 Rhodium Plated Blue charm Bracelet for Girls UTB_013
+
+    <h5 class="jk">Free Size</h5>
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://m.media-amazon.com/images/I/51DVNSbWIRL._UX679_.jpg">
+    ₹999 Laptop, Office & travel bag with anti -theft back pocket
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://m.media-amazon.com/images/I/61JjYJD0UHL._UY625_.jpg">
+    ₹510 Leather Women's Satchel Bag | Ladies Purse Handbag 
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c3">
+    <img src="https://m.media-amazon.com/images/I/71K0MLhCJ8L._UY741_.jpg">
+    ₹1,099 Heavy Semi-Stitched Lehenga
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://m.media-amazon.com/images/I/51JprtodzeL._UX679_.jpg">
+    ₹899 Korean Ribbon Women Backpack College Bag, latest Girls
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRhal-mJaBKEDvghfakj137Fsr83dHoQOC9PpBvOne4DXk8uwq2x37V6yb42-UTnDU7aSyS0WCJgxuA1rlaWPy0e5UpfQmg1k8nnrSIREqqS6pNxGE6oodcCN4&usqp=CAE">
+    ₹800 Belt with Handkerchiefs & Wallet Gift Set For Men
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c5">
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ_VJhQ-MDixag9Rko6l3NajEOZPZblyI2K3gFw4EHWn8X7-txjhKRIegXSOQeezZbbGH-2h_wztEU0kmfYc_9RxwW9YMBHuSevft073Hg0&usqp=CAE">
+    ₹1,149 Classic Men's Accessories Sets For Gift 
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c3">
+    <img src="https://www.truser.com/cdn/shop/products/TMPFP003ST3236806-ArmyGreen-2-Front-1000x1254.jpg?v=1677672078&width=750">
+    ₹2,819 Six-Pocket Coloured Denims-Army Green
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://www.truser.com/cdn/shop/products/TWPDM013SK3036508-Coral-1-Hero-1000x1254.jpg?v=1677677715&width=750">
+    ₹3,999 Floral Embroidered Jeans-Coral
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c3">
+    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQUg8PMYOVRmTE81f2jspEIE3T33VkEKCarKKNnOqInrqcLr5vXd9fIAyuDPc_lOMAncZy91oA8HFnVn5sYadivVjbutR4MflAUQ6KAOh8SuY9Ld3nN6URPww&usqp=CAE">
+    ₹1,027  Formal trouser Cotton Blend Quantity:3 
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://spunkies.com/cdn/shop/products/MG_9006_1800x1800.jpg?v=1667300824">
+    ₹2,999 Pink Bomber Jacket & Joggers Sets
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c3">
+    <img src="https://m.media-amazon.com/images/I/81XNIOGvbaL._SX679_.jpg">
+    ₹5,095 Makeup Kit for Women & Girls Full Kit 
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://static.cilory.com/593489-thickbox_default/eastern-blue-printed-stitched-suit-set.jpg">
+    ₹1449 Eastern Blue Printed Stitched Suit Set
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c3">
+    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQvU_z4iy8ukLqMbHu3yZ3rm1M0xiNcucMwVu6QQcL9gtSJADnMmvnl5cif8ncekjNr4wRad8C3-NRgszoKKlagDslN9WfjtaVUk1XnmNFID7kxCVoZchpE&usqp=CAE">
+    ₹4,300 Men Cream Kurta Jacket Set of (3)
+    <h5 class="jk">Select Size:</h5>
+    
+    <!-- Checkbox for Size M -->
+    <label>
+        <input type="radio" name="size" value="M">
+         M
+    </label>
+
+    <!-- Checkbox for Size L -->
+    <label>
+        <input type="radio" name="size" value="L">
+        L
+    </label>
+
+    <!-- Checkbox for Size S -->
+    <label>
+        <input type="radio" name="size" value="S">
+         S
+    </label>
+
+    <!-- Add a submit button or other form elements here -->
+
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://static3.azafashions.com/tr:w-575.0,dpr-2/uploads/product_gallery/mlv-1060_3oct22-0074105001664808060.jpg?noopt=true">
+    ₹468,000 Pink Embroidered Lehenga Set For Women
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c3">
+    <img src="https://medias.utsavfashion.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/s/t/stone-studded-bridal-set-set-v1-jcv289.jpg">
+    ₹3,440.00 Stone Studded Bridal Set With pair of Haath Phool
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div class="abc" id="c4">
+    <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/9/tr:w-480,/49dfc61KC-11014990_1.jpg?rnd=20200526195200">
+    ₹2,927 Green Beads Studded Kundan Bridal Jewellery Set
+    <h5 class="jk">Free Size</h5>
+<input type="button" value="Buy now" class="s" id="w">
+<input type="button" value="Add to card" class="s" id="w" >
+
+</div>
+<div id="p">
+    <p><b>Shopping: Affordable Online Shopping at Your Fingertips</b><br><br>
+        There are many benefits of shopping online. You can take your time and look at different options to find exactly what you want. It's easy to compare prices online and find exactly what you are looking for. And now with Shopping, you can shop for anything you want at the lowest prices in the market. Even if you want to shop for cool gifts for your friends and family, there are many options that you can find on the Internet.
+        
+       <br><br><b> A Huge Selection of Products Across All Categories</b><br><br>
+        We have a vast inventory of products ranging from apparel to cosmetics to home utility and kitchen products and more. With over 50 lakh products and 650+ product categories, Shopping is sure to have everything you need. In our latest collections, you will find all the popular items at an affordable price, so you can be confident you're getting the best deal. Whether you're in the market for new clothes, accessories, or just some daily-use items for home, Shopping has what you need.
+        
+        <br><br><b>Latest Women's Fashion Is Right Here<br><br>
+            Women’s Ethnic Wear Collection</b><br><br>
+        When it comes to women's ethnic wear, we have everything you need to find the perfect outfit for any occasion. Whether you're looking for traditional sarees and blouses, or something more modern like suits or casual Kurtis, we have it all. And with our stunning collection of accessories, footwear, and jewellery sets, it's easy to put together a complete look that will turn heads at your next wedding or festive celebration. So come and shop with us today!
+        
+       <br><br><b> Western Wear for Women</b><br><br>
+        Shopping is the best place to find fashionable and affordable western wear for women. With a constantly updating inventory of casual, formal, and partywear dresses, jeans, tops, T-shirts, skirts, and more, Shopping has all the latest trending outfits you're looking for--plus funky jewelry and accessories. You'll never have to worry about overspending or not being able to find something you love!
+        
+        <br><br><b>Accessories, Jewellery, and Footwear</b><br><br>
+        You may have your favorite outfit picked out but accessories can really add a sense of style and individuality that make you stand out! With so many types of accessories available, it can be difficult to find the perfect piece for yourself. Fortunately, Meesho has a wide variety of jewellery sets, handbags, belts, heels, casual footwear, watches, etc. With so many options, you'll be sure to find the perfect accessories for any outfit!
+        
+        <br><br><b>Men's Ethnic Wear</b><br><br>
+        Do you need a new Sherwani? Are you heading to a wedding and want to look your best? If you answered yes, look no further than our latest men’s ethnic wear collection! Whether you want a Kurta set, Pajamas, Sherwani set, or any other Indian attire, we have an array of budget-friendly styles that are sure to fit your needs.
+        
+        <br><br><b>Largest Collection of Menswear and Accessories<br><br>
+            Men’s Western Wear</b><br><br>
+        Through our large selection of menswear products we offer, you’re sure to find something you love. We have a vast collection of t-shirts, jeans, polos, coats, and shirts. We have sizes in stock that fit any man’s body type, and the best news of all is that they’re all affordable. We make it easy to find exactly what you’re looking for, too. Our search tool lets you filter our selection down by size, color, material, and more.
+        
+        <br><br><b>Ethnic Wear for Men</b><br><br>
+        If you're on the hunt for a new sherwani or any other type of Indian attire for an upcoming wedding, our latest men's ethnic wear collection has got you covered. We have a range of budget-friendly styles to choose from, so you're sure to find something that fits your needs. Whether you're looking for a Sherwani set, Kurta pajamas, or an ethnic jacket, we've got it all!
+        
+        <br><br><b>Men’s Accessories and Footwear</b><br><br>
+        When it comes to fashion, no one knows how to help you gain the upper hand in style better than us. Shop our online collection of accessories for men and pick out something for yourself or for your other half! Our accessories collection includes items like men's wallets, cufflinks, bags for men, and more. So don't waste another minute and get yourself some accessories today! Do not forget to check out our latest footwear for men. We have everything from colorful sneakers to formal footwear to flip-flops for men.
+        
+        <br><br><b>Affordable and Top Quality Beauty Products</b><br><br>
+        With so many different cosmetics brands, products, and items to choose from, it can be overwhelming when trying to find the right makeup for you. Sometimes it's nice to try out new products, but if you buy bad quality makeup that breaks you out, it's not very cost-effective. We are only concerned with the best products. We only stock up on the best makeup and skincare that won't damage your skin or make you break out. We have everything from foundations, makeup removers, concealers to primer, mascara, eye shadow, and lipsticks.
+        
+        <br><br><b>Cute and Trendy Kidswear Collection</b>
+        Kids grow so fast, it feels like you're constantly buying new clothes for them! Whether you're looking for the latest trends or just want something practical and affordable, our kidswear collection has got you covered. You'll find everything from rompers and dresses for girls to sets and jeans for boys. Plus, we have ethnic wear and accessories for kids of all ages. And don't forget to check out our baby care collection for all the basic products for baby care.</p>
+     
+</div>
+
+</body>
+</html>

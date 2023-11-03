@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1{
+            font-size:60px;
+            padding-top: 50px;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        body{
+            background-image: url(https://files.123freevectors.com/wp-content/original/182089-light-blue-abstract-graphic-background-vector-image.jpg); 
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="cocochan.css">
+    <div id="nav">
+        <a href="index.html"><button id="shop"><b>Shop Now</b></button></a>
+        <a href="oggy.html"><button id="man"><b>Man</b></button></a>
+        <a href="motu.html"><button id="women"><b>Women</b></button></a>
+        <a href="patlu (2).html"><button id="kids"><b>Kids</b></button></a>
+        <a href="gojo.html"><button id="electronics"><b>Electronics</b></button></a>
+        <img src="https://toppng.com/uploads/preview/search-icon-icon-11553428131chipvliqou.png" style="height: 30px; width: 30px; border: 2px solid black; background-size: cover; margin-top: 10px;border-top-left-radius: 5px;border-bottom-left-radius: 5px; margin-left: 10px; float: left;">
+        <input type="search" placeholder="Search" id="search">
+        <img src="data:image/png;base64,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" style="height: 30px; width: 25px; background-size: cover; margin-top: 10px;float: left;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border: 2px solid black;border-left: 0px;">
+        <a href="create_account.html"><button id="create_account"><b>Create Account</b></button></a>
+        <a href="login.html"><button id="login"><b>Login</b></button></a>
+</div>
+    <h1>KIDS FASHION</h1>
+    <div class="abc" id="c1">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSJCTcjNcn9JNzKZ4Haeexe6JAO4qDJ2jeSY8K7r2-xxgnI8YT9SYCTly95gYyA1bjBEj-LeBcRQBm0oSvgTdXQR4wcQrJBE2kAhsEicXVIwkWy1NHhO6GI_A">
+        ₹216 Baby Girls Party festive Dress 
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 1-2
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                2-3
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 3-4
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR9E0nOLJTLsvmkw9hhuhtGi12e0G6euuV1ZGbK5yGGEwc8ouXLqDU9KBwXvO8bK1a-FsQzdiepStBb_twJjalJJTb-Y9JXv-Yfbn71lxzna69j52xixCHG&usqp=CAE">
+        ₹2,429	
+        Girls Peach Gown
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             8-9
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            9-10
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             10-11
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR14L1itZoPBe6DJNDENpEWawKB0-n6Q-y7-Ctun7vAhXqgImEkHC2H1yDH5q4XOqrQA4xI9GfGfknDbmy4dckMwb7VvLBq0A&usqp=CAE">
+        ₹299 Kids Clothing Set for Boys
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             0-1
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+        1-2
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             2-3
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTkctJViLtBxOEUxcudhjgIsC4G7cqMuoWxTCgVhNhUYBqZEaxteRcvgL561WjjfatsfejmhlUm7Vr191PGbx3xmGbWGDeusj3wh4hWOQs&usqp=CAE">
+        ₹449 	
+        Jhrey Creation Boys Shirt Pant
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRpVw5pAr9OcgccP-X1jfmVSor6-VnQdN-I98yi21j2cUGvuAyHxTpLcpcHl4Cv8NcWqDcUMVDJyFImNzYD2GUtDgjq2BF2P8KboGUzkAsY0XHRgAjHM8Z8&usqp=CAE">
+        ₹1,611 Boys Printed 3-Piece Suit
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             7-8
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            8-9
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             9-10
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRda7rvI3r17dy107nfDH_pIQHge2LYZnmnMQ&usqp=CAU">
+        ₹8957 Boys Korean Style Two Pieces Set
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFwv3ExZVWxvWk4lC2XQRKfLb4iogt8kRsQ5uIkOUeDtTRkLiWFbP02crximvJUkDS_0k&usqp=CAU">
+        ₹9659 Clothing Korean Style for Children's
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0ZR5g9KaGbzeu_Fln7JjKwJlZHj43NlNdBSFS7Z3r17lOFzwpLllus6wv_l9izPAg3U&usqp=CAU">
+        ₹9680 Girls Clothes Korean Style Set
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxj3a6nfsOzLRuOS4_s5LcLkf_xaUpm8_7pw&usqp=CAU">
+        ₹4750 Blue Organza Lehenga For Baby Girls
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASaS737kodEZ8KLIASDXftM7ol0y8jye3UMAUf6UEQgngDXhFV7A4j_0Skyulrm3vQEU&usqp=CAU">
+        ₹8769 Bell Sleeved Kids Lehenga Choli
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c1">
+        <img src="data:image/jpeg;base64,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">
+        ₹6850 Boys Spring Autumn Clothing Sets
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 5-6
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                6-7
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 7-8
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvbL_sJJ1u0WEoCfyGP2sn-b8lAFh_hiHWlA&usqp=CAU">
+        ₹8570 <br>Korean Style Children's Colorful 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://sunjimise.com/cdn/shop/files/O1CN01Aa4Gww1i1GVa5Q9rq__2208158364352-0-cib.jpg?v=1684585983">
+        ₹6870  new children's middle age
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn7qCN1-OH-Un80zFpPxSD50BBbPM7vOnyGQ&usqp=CAU">
+        ₹8669 Boys' Korean Style Fashion T-shirt
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDxLIoZjbQaXboEH8WuNf5G-2dS6wPXUVI47EZqDQnGAsArzafM7jFH8WbxV4jHuyJTk&usqp=CAU">
+        ₹4876 Boys' Coat Autumn Winter Clothing Korean
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR83jl_sJLuMXl_8QI4PNtHHFA1FjLGDqLK3XzCkEcECyFByktQKoB47dbmmDe79DBtnq8CVAyqfz3AY2fr5bo5sClSGuHyNYpeCA9ac43tghe2ESd6nBcUa2w&usqp=CAE">
+        ₹1,304	
+        Bhama Girls Embellished Net Gown 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTD_VFuSWnGtqrZtm4SDFdZX9K0VrDdib6gJBVYs7wC28PXysCBZ0hpPp8wpuv-RlFbQrC-ebDn9Dvmy042RSaTGr-EgNBdM_qwcoQBVsnZgV_w3hsTbgbSCw&usqp=CAE">
+        ₹11,865 KID'S SUIT - Kid's Wedding Dress
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQrJatrwey9glCzuR6coV4y2xNYllqUF6QyLt2aeX1TwWNhYoNbf77yii0WSyX_EBrmEAdX4N5hpQ80RHf_H0J6OS7YvIl8J95OT5pXoTR3_P1F1tYw_-b1&usqp=CAE">
+        ₹699 HVM Boys Full Sleeves Dress
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             2-3
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            3-4
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             4-5
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTKXrj9RIFL22snrz9ybiH9M_GDisXr--L8V3lv_0dOd2nwGLIcO7gb0r8mWhb_efl3ueqA-TFqPHDHAjb4C9DftRhz9V2CDcIId0T3qJH8&usqp=CAE">
+        ₹418 	
+        Baby Girls Casual Dress for Girls
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             1-2
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            2-3
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             3-4
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ13xSL0XS2plVHGuU23EIucy929ZwWNQmbcFooEN9Hg6iJLV9sVPxi8WPcbhWJUTFICpP0rRiWgRSnD1ut1xZ81ZriXB4XRPrYpWcIWzc&usqp=CAE">
+        ₹6,999 Lavender Kiss Ruffled Gown
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c1">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQqiath8Q8GkVkne5pxIMbKXG2mA4hQjo3NSEz3hTwaKLE8d4MQjcUIP9Eh59l3ZDnn5rZgNa-GS8sOCu2v9_2CRr23ic_fmwOYAJHcaopF66rC4FLNaubR&usqp=CAE">
+        ₹2,780 Black & Green Checked Party Wear Dress 
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 4-5
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                5-6
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 6-7
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ6WfJQg5iD3nMS5zFvCz8QT_xZbHdDCzqzCKfgG9YbyEySKkpzaBcm7qTg2zM53mimYb3IPr0rZBZlp6Ue9H3q48fgIlrXEM7RX9BaXM5NS2kfy1p_ytB0Tw&usqp=CAE">
+        ₹609 Boys Blue PolkaDot Formal Set
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             1-2
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            2-3
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             3-4
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQKCtO52etkbBNlvO_p9JifEUejgmEY2pQgk9OzykeDvb7NIhn8YAEvecNn9-7ba1Zayi78j35nm86RF7b2B91YwtpOv9yEshgFXYjKMQcyDJkZJZ_5JaRQcw&usqp=CAE">
+        ₹912 Mini Taurus Full Sleeves for Boys
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             2-3
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            3-4
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             4-5
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSbqC4zXsHyj275XJyKR9bPtD3xo34bYTt7WIPrPruy01YcSEk743m-xlkpRg6cNUrQLntQoEE6NVyGczlaOQf3N1mNxB_O81pVW5luFE7X&usqp=CAE">
+        ₹3,499 Bow sequins party dress
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSvjCva3nex6-sQXSyDUHLHc_7g_Abq-Bv18peiZsgKDQzOYcybUcT02rK14S501Php2sRZInRNpKWomjWvakgdQb35etdheUXBQus3s_I&usqp=CAE">
+        ₹3,200 	
+        Beautiful Birthday Party Dress
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             2-3
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            3-4
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             4-5
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR5wPlAqg6qhH7yqf1Rg5ITaXqEZvkLbw2Xsa-UvG0lykUailizM_oe-7A-1kwXS9_ASmm_Mb2vEbg20IBBGsH_KEsm_C-pdTl8-MugvgM&usqp=CAE">
+        ₹5,500	
+        Slit Dress - Little Girls Slit Dress
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             6-7
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            7-8
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             8-9
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQSWIEAsaGz1m0Opav_Fhzvv9hO3-vUT7CphFq_srgNzCFvIOLnfkrdixOK0DwiV3Jh57zJOL0_6BATm2vY9YsD5jEtvRSNkJa-OejoYCi322SdhcQXcS8X&usqp=CAE">
+        ₹379 Army Dress for Boy's with Cap & Shoes
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             7-8
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            8-9
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             9-10
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR9qHxl9CPwS7YQWz2TKgE7xRRAIGF6sunuaSH5mAHIA3EOYtW2yvzZjVwG-iyDTrk5hRV8t8Thd_fbJz-gBvHk4svAhsSteg&usqp=CAE">
+        ₹339 
+Top & Bottom Set For Boy's
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+            5-6
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            6-7
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             7-8
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTaUqd1r-hRCl5oilj-NBrZyG3MgDkEDJYJaPKCJ4q_Yo918NQ4Uz3HcPwGFIxrj_vip49Z5Mb_dCPbHxqTDUNfSPWYAu8fmBxcU6Lo_T97&usqp=CAE">
+        ₹1,099 Girls Purple Floral Party Dress 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+            2-3
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            3-4
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             4-5
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQtUrDb3eO91K2in_mzRaNUz3rwgvgp3q51n5YUkoyzztEoiru89rrJgzKbMItRWYE2ZygCD_rz33122U_TRaRGskgoC6BfFIXX6OOXrFQ&usqp=CAE">
+        ₹799 Floral Print A-Line Dress For Girls
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             7-8
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            8-9
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             9-10
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    
+</body>
+</html>

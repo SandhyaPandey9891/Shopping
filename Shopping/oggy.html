@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1{
+            font-size:60px;
+            padding-top: 50px;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        body{
+            background-image: url(https://files.123freevectors.com/wp-content/original/182089-light-blue-abstract-graphic-background-vector-image.jpg); 
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="cocochan.css">
+    <div id="nav">
+        <a href="index.html"><button id="shop"><b>Shop Now</b></button></a>
+        <a href="oggy.html"><button id="man"><b>Man</b></button></a>
+        <a href="motu.html"><button id="women"><b>Women</b></button></a>
+        <a href="patlu (2).html"><button id="kids"><b>Kids</b></button></a>
+        <a href="gojo.html"><button id="electronics"><b>Electronics</b></button></a>
+        <img src="https://toppng.com/uploads/preview/search-icon-icon-11553428131chipvliqou.png" style="height: 30px; width: 30px; border: 2px solid black; background-size: cover; margin-top: 10px;border-top-left-radius: 5px;border-bottom-left-radius: 5px; margin-left: 10px; float: left;">
+        <input type="search" placeholder="Search" id="search">
+        <img src="data:image/png;base64,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" style="height: 30px; width: 25px; background-size: cover; margin-top: 10px;float: left;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border: 2px solid black;border-left: 0px;">
+        <a href="create_account.html"><button id="create_account"><b>Create Account</b></button></a>
+        <a href="login.html"><button id="login"><b>Login</b></button></a>
+</div>
+    <h1>MAN FASHION</h1>
+    
+    <div class="abc" id="c1">
+        <img src="https://m.media-amazon.com/images/I/71kOAHD28+L._SY741_.jpg">
+        ₹298 BE ACTIVE Men Formal Shirts
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 M
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                L
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 S
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://m.media-amazon.com/images/I/71ShBw4g6GL._SX679_.jpg">
+        ₹264 DHRUVI TRENDZ Fancy Shirts for Men
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcREX65ySO7T8lpsd-AacGKp4yMS9GNK7RyO6jDHXCKm5O66mCZy5metilrka28tGF3ncU0o4Ckul4T8a_A0eev-tDfWDDLwR6lo-EJYz7GjoPzle7kXPpjibw&usqp=CAE">
+        ₹1,999	
+       Men's Pure Cotton Formal Shirts
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlge0Njq6y-PrTA5MCKOS6_BjNYWzQqZXOZ2SMvhPtbjh8MMi5SNa0cO3og1rdS0CtZKMm6-kL7G5TH1KQQ1xhU3jiCprD1A&usqp=CAE">
+        ₹629 
+HIGH Star Men Black Slim-Fit Stretchable Jeans
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://medias.utsavfashion.com/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/w/o/woven-art-silk-kurta-jacket-set-in-baby-pink-v1-mgv1328.jpg">
+        ₹2,999 Woven Art Silk Kurta Jacket Set in Baby Pink
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19317814/2022/7/30/77269da6-ad31-4b34-9c17-38727af5bbd61659175036052Suits1.jpg">
+        ₹3,999 Coat Pant For Men Set of 3 for Office
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/7/q/w/s-all-rbc-white-one-nb-nicky-boy-original-imagjz5bgpmhcaea.jpeg?q=70">
+        ₹209 Men Round Neck Cotton Blend T-Shirt
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jean/p/y/b/34-lj20183a-l-zard-original-imagha8dzqztwzca.jpeg?q=70">
+        ₹399 Men Slim Mid Rise Light Blue Jeans
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://cdn.shopify.com/s/files/1/0606/5864/7273/products/TASVADY226787_500x.jpg?v=1656068203">
+        ₹5,000 Bandhgala Suit For Men Set of 2 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://5.imimg.com/data5/ME/HE/JO/SELLER-93969960/men-ethnic-jacket-kurta-and-dhoti-pant-set.jpg">
+        ₹3,599 Silver Silk Kurta And Dhoti Pant Set
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c1">
+        <img src="https://imdarji.in/cdn/shop/products/259MS_PWhite_700x.jpg?v=1675146743">
+        ₹1,299 White Premium Men's Formal Shirt
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 M
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                L
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 S
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://m.media-amazon.com/images/I/51byp5tQ86L._SX569_.jpg">
+        ₹249 Striped Print Casual Men T-shirt
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://i.etsystatic.com/36682616/r/il/3446fd/5185453645/il_fullxfull.5185453645_mf49.jpg">
+        ₹3,999 Coat pant for Men with Tie Set of 5
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS5PoaTHkGMK0911qNkLP1USgDgegGRDdexXJZ6MFNR0GD-J2uMBWLLq4Wm-tYQi93ON84iHYuinZAvWFsiPO5NnR4GF01Z-ETz1u5xWEORHIv_uOGS23BS&usqp=CAE">
+        ₹599	
+        Highlander Slim Men Blue Jeans
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTqR22njagpZXHYYVrz8U_-8MSk3s1Crc7bH-7bqTSwOE4UHe8LvHGYlJsVJ3nTBnP0LM8XZzr-kHgR3MalhIPkznThbwK50ZLJ3IH3zv0T&usqp=CAE">
+        ₹699<br> Stylis Jacket for Men
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT1M4tUV7igYnmmJRb_nj5KPuB-G5f1kJyYgs8DxrLG6eQ4hznlTnWkKlwI0QKprpis_RW9GCq1bPiqETuK3TsTb9ZUscx6vW1UdMLni9p9nXVTpid52HQzHg&usqp=CAE">
+        ₹799	
+        Jade Green - Formal Shirts For Men
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQMVkkF9R7Axw6GmzBgVD9MlQxhuy-JIkLEoj0gU0IxK009gALdES_ClsqIl0yAYerwecya2SNHgaZ1v0iYG7_eg527CJNOlkw-nhJkdBp_psHQ19ykVu-0dQ&usqp=CAE">
+        ₹816 U.S. Polo White T-shirt for Men
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRb8aLFJUNyp5_lK01AW2zzYfXlpqNTxXpfSBZsv6BOVGdQBKfGBH5bUxiwLvMnkhtpGBOZfKprTxf3gkqZo2YjJcm3tMBYb7ntYW45JpW0fQJgBIutc3i0qg&usqp=CAE">
+        ₹1,575 	
+        JACK&JONES Dark Blue Jeans
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQNiN_AKxXmElD8YRchsVqEXsjM_ItI3aaEbnP0oGIZ5AqXcmiJ1iIYNzgNiRRkTKZ4DBV-n-9EJE0AnTvn1v9fHnbAiYquJbZndkusWnE&usqp=CAE">
+        ₹839	
+        Olive Green Solid Tailored Jacket
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR60lnfPaFysd4bCCYnzNIVbkpH_Ams8Bb-YwU7CLQpIqSy3ut4sROMTcBy7SnufmcALFPCcrECfv6jHFYuu9gp4N4znM1xsIcMcXInepiEoKwuVOqy4xF8oA&usqp=CAE">
+        ₹299 Polo Store Latest Cotton Adjustable Polo Cap 
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c1">
+        <img src="https://pothysdress.s3.ap-south-1.amazonaws.com/1270277379_img1.jpg">
+        ₹2,299 Blue pure-silk jacket kurta set 
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 M
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                L
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 S
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSeM8ldO9iC6qwLNbuOhC3ekg9q2G2tipUJyDYDNMsabdlkbqYFqNbziQyLS3arukTJy5YPWtP7hiDQhp0KFxiSPUER6TL9&usqp=CAE">
+        ₹249 Latest Embroidered Cotton Adjustable champion caps
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTqlmhct3rGjU7ewnGFBgR04Xr-AkZ6tBMwGtWleoI97hpTmkHWEjJ92R-Sjpb45zIqfPU2WmdH0U0U_MAbMv7MVnbLBGGbmuFyWCi3tmCc0vhTFWIWgq9a&usqp=CAE">
+        ₹640  Printed Backpack Bag for College Office Suitable for Men
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQmnV_o83ctU9yslNxvGO3qa3JB3wtpyM-6DZn1t80SRocOLOXyzRp6NoXP1RuXrHkigajhKmyrBEye8CcGF8U40avC02t5WKSLhm_vLLhYrUadWTg3fQ-f&usqp=CAE">
+        ₹1,120 	
+        U.S. Polo White T-shirt for Men
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1050,h_1050/global/586716/51/fnd/IND/fmt/png/Essentials-Logo-Regular-Fit-Knitted-Men's-Sweat-Pants">
+        ₹1,600 Regular Fit Knitted Men's Sweat Pants
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/673309/01/fnd/IND/fmt/png/PUMA-Power-Woven-Men's-Regular-Fit-Tracksuit">
+        ₹5,000 PUMA Power Men's Tracksuit
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://i.pinimg.com/736x/ab/b2/e7/abb2e7b90d8d1b1a6ee488c6bde58964.jpg">
+        ₹7840 Black Baggy Loose Breasted Peacoat
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8qjUjHN_tiveFqNhYMgGjX1cWC-koEU5zIw&usqp=CAU">
+        ₹3784 Minimalist Winter Warm Softshell Jacket
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://i.pinimg.com/736x/ac/fd/5f/acfd5feda10f7044423e301aceed6b3a.jpg">
+        ₹8570 Black Winter Cashmere Blend Coat
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="data:image/jpeg;base64,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">
+        ₹9460<br>Oversized Baggy Striped Contrast 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+
+    
+</body>
+</html>

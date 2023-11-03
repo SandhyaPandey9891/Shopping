@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1{
+            font-size:60px;
+            padding-top: 50px;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        body{
+            background-image: url(https://files.123freevectors.com/wp-content/original/182089-light-blue-abstract-graphic-background-vector-image.jpg); 
+    background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="cocochan.css">
+    <div id="nav">
+        <a href="index.html"><button id="shop"><b>Shop Now</b></button></a>
+        <a href="oggy.html"><button id="man"><b>Man</b></button></a>
+        <a href="motu.html"><button id="women"><b>Women</b></button></a>
+        <a href="patlu (2).html"><button id="kids"><b>Kids</b></button></a>
+        <a href="gojo.html"><button id="electronics"><b>Electronics</b></button></a>
+        <img src="https://toppng.com/uploads/preview/search-icon-icon-11553428131chipvliqou.png" style="height: 30px; width: 30px; border: 2px solid black; background-size: cover; margin-top: 10px;border-top-left-radius: 5px;border-bottom-left-radius: 5px; margin-left: 10px; float: left;">
+        <input type="search" placeholder="Search" id="search">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAEiCAMAAABX1xnLAAAAe1BMVEX///8AAACqqqrNzc1ERER4eHi7u7shISHo6Oh7e3vc3Nz4+PgkJCTR0dGnp6f8/Pyurq48PDyCgoLv7+8PDw/g4ODBwcEyMjJNTU1eXl6MjIxbW1ttbW2ZmZm6urpHR0cbGxtoaGgrKysTExOJiYmdnZ01NTWTk5M+Pj7wFEx0AAAHGElEQVR4nO2d6WKqMBCFjWiloEBFECt1X/r+T3ilm9VkJiFkUG/n/IXCZxqSmQTmdDrNFXvJuNhsJwLQZDCdvyZe7OBWjZVFc5DzirroZrdlDfPZ1oz1U9t5frs2Dhe9OqyfWibhbWhzC9hKRX4D2LS0g620TtumfbKHrfTUKmw8bkYrxLhF2nTelFaIWWsdwi+a056eOL8l2oMLWiFeWuENN25ohZi2MWW8u6IVokdP22C4ldWnpo1c0grRpaUduaUVIqCkjZ0MYb81p3zcHHeFShEdre+eVmzpZrfGkYJKOyralIJWCKrmfaXBfSPCpaEVExranAhX0CRDaypckqk4pKIVgiI39uhwPQLcHR3ukQB3ZguzGmq0Iui8qXUSkaS+RgQThX280O6awpeCx8K1nyRugrt4LNzksXC7jMu4fw73Fmv7DXCfk0gn94sj9rgGcr/YQIrrfqmMcRmXcRmXcf8j3Hua1fZZoJP7zP3PBJCMy7iMy7iMy7iI3kY6efc0CRvowSIyxmVcxmVcxmVcRPeUuD93H2qx/8G2Uh4sgGRcxmVcxmXcdnEXcaiT+9f7OSJjXMZlXMZlXMY10j0l7rOxTn33H05w4s64jMu4jMu4jHtK3F1i9NSSlt/tcadL4B4/Oki/KADOhL5VloKOdiMy6DvU+8CV4l3GdSjGpUKtxLhUqJUYlwq10j3hbt5fNNpIk/ANcW0S9xvi2gSQjMu4jMu4jPtncB9sVps/6yQv9t93RMaJOxVqJcalQq3EuFSolRiXCrUS41qzrIYDjSbJHeF2tbX0fKkQJAeQjMu4j4Hbbuk/EBdwvZFw2y2sCOBOOoDxjZQP2teTt8EFimRuOwND3OwecAcdwOtCmsXtS67aJO7Ag33oAFX4X68vEFq6+ggxTnSSfxBQs7yA/CNm0hWcGk1cqpRuBtQmLqHfMZWuQGAv8C35BdOp+sRXaDydSF9e2D9rWknGYDEwvCZgXd2R1HmdWbpc611qGmjUzMEjUsRMVbJfVZgbmkJHoM3Bs3QNst4gm8Q9A2emnc5QfWQgXaNjPZThKuQ7AXPX8HQI8puSPY7swwZU8qwHTUnz07E34JjifXDgRzfTUL4PNGZWzhTQ0CBPFDTNqwgpoAL21eznQ22mKFazdE+r6LnQ0z/wMQZFb3DuSqQY3+G+sPw4ClkdFIpPCp170UihFOJ99OlZAxpJKH546rg7LBXOGOC/8DPDAb0O5ECpSel+pVQ2olDot/l6mNZ1LuZ0dFBF7uDkudYRKG0r9u5olZ/69KGzv1/YSUFfVWURDWePm9LuCextZzMr8AetVRd0xas2p1pDp5//1bCXhPpTJ2jeriW11xPsd3Pu5zEYDByU12ywpPMjOZ7+EGhCOfg1CxzBqwIfvgWrZrAToLQMnBD+juERKzLIK7NRYgw55SCLGRcRzBo8TTUVf8izNrh8gT7+Q6wHLx96JHYBLY7CPZBe49pEoCUV3CevAwLEUhFeNErrA0/3cBFFxOzmOsxETt0i/uBhPjP0Ga80mT0hZl8Z4gIuNRnSvFPUUCzNd0bEq90TWp0yRP5TcgyPRd5aq9dwlETHHfRd7es+WgTaehxYnq0IZbGRaa67V3NhBtCqSBZd9SiJrX9jdBhXPjzIMHLiJTWLD1Fa9VAaAus5n6K02k5Rq7kh0FK4yReddbX/gt4YHPfX6J+ROA52tB6J6pi7ks4LksSOVBc8Iw+NzvNthkxwdsp0DonovpEurxkAUbWtEt0q4Rj981C77OGygbVNq1w2+a1AP//vHA3Bod7YE0o6zjKxLDw6AA7RWelLBhueRvtn44ZdIjNK/o0qpED7GJea59bTXJpj8cxZ8m6OUmYXE9O+TXn11OsbpiCmYaD5bvWg3AfmleXiMNiXxvsbPeMHJMUn8SsV47fEy8IYUZh5ydsYSVhkvdT4z9nb27rSplY/q9e+7lWnbT94ibYozdSr/QyHtXqaWxUW0xCePlHKMjEkeyMAl2LvykxEe9a4GpQiyawW7Zpo2igYabsDN17PSBquk9fRykGuog/5XclRouJg48REztLAtIUeXLpcJQqI57jCtclATvCmyLeWBMUM4wUR8HJBsxob5wRdosgJl469ssbOiV6TkmiZ8Edp5CzT2ESEa8ZnZXvrDcuz3vfOlwdhpV3zlFbWoOy20q4XxFnUL2oHFKuiH2Wts34p9IPFsSx6h6HmCZwMD72iPC4C+dO09hWnfhCMAiAWmp0OBX5KvNVVX8ArPdDLC7cW41KKcSnFuJRiXEoxLqUYl1KMSynGpRTjUopxKcW4lGJcSjEupRiXUoxLKcalFONSinEp9WC4wGvVhi85N9XIq6cRtK9W+0JWuC2+kXWplRUuSVkZEykqCDEu4zIu4zIu4zIu4zIu4zIu4zIu4zrC/QcAbrLWOVyHIgAAAABJRU5ErkJggg==" style="height: 30px; width: 25px; background-size: cover; margin-top: 10px;float: left;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border: 2px solid black;border-left: 0px;">
+        <a href="create_account.html"><button id="create_account"><b>Create Account</b></button></a>
+        <a href="login.html"><button id="login"><b>Login</b></button></a>
+</div>
+    <h1>WOMAN FASHION</h1>
+    <div class="abc" id="c1">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSN00QQsMBsy7iKpjIGv9LDM73GeQpZ7bOWElEHHmkn8HAjT2AkIY1cn-DIfVp_sJ96J8QedR59QnAD7ResCxZlLkFRXxO5ORCiPhbb04c&usqp=CAE">
+        ₹1,950 Party Wear Sharara Suit for Girls
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 M
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                L
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 S
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ9digY2IkN9gfY2i8kiPhkS7-_GtVWn7Zhq4BMHINk0_wIimpVhJFHtVoDu4RhxnV6NOX2X5UVgqBY_b1K-Hnm1FJqSTA_rhih6W743sw&usqp=CAE">
+        ₹929 Traditional Fashion Women Printed Kurta
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT7cbitzea0zwNDVlpSXnApIICQEM91TmEcQiPMuwTB9X2y09I-2FgNGLBtw3_Kz3duTIMp_2ikL3EWnOn4xhcUguPYrXTHg4Mv12UxksO47JDL91mD19lV&usqp=CAE">
+        ₹860 	
+        Mothers Gift Dress Indian Wedding
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRahTC1wnpLZo2Di6viZpM1MXgkySX4uJ_qtLPP3ywpWq9bzvm8LQ7m_wv1Y0SRgnYp77bMxSxNJqgzVnSMeVUi99j8-UWz4ChOuurgbwA8&usqp=CAE">
+        ₹1,189	
+        Indo Era Women Ethnic Net Kurta Set
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRp-nKO3HxPcAsmqDw-KsEbUEzBBiSCYDkinbGNH2OymjdR2l7rIMWMHFCmSs6uWrJ0f_kHHw59MxyUidsEEyg0PK-oKKsBG4k864tXHIw&usqp=CAE">
+        ₹1,899 Mustard Color Full Stitched Suit
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBPzewxmCWBy-3FImo7NexS5_KWlUQ2bOhb4BHSQt1HiXh6wZ4yOu5K9FxBLZG3L_d95evsEbOOhYZOW2XSVyF6juK7fB_7R83eB4FcNQz&usqp=CAE">
+        ₹966 Pakistani style salwar suit for Girls
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTyThqriHEaRa03K9E2w-iuy1nGQih7UfpcUf4KCnUYuiUO6lkinQOz6AIj_ppwBMsc6-U7ah8qe_qyhF61-DSXgkLUxVYzCPXcO0t9dxIh9TYeGVTopwnV&usqp=CAE">
+        ₹800 	
+        Nk Design Women Ethnic White Dress 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRZyhIbOyqEQJonGenRWcM-fXajK85MpXawHwycAuBCUtLJvV6QQc3CfRKeYUoGHxCCIk81HuEVoX35k1s5bWbU0tGm51nWwIwH9EFgQkE&usqp=CAE">
+        ₹399 	
+        Dillu Fashion Women Ethnic Dress 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ9x6OliQ6sLd27riHGcLPepyPlaStSWGp1WJZZfMz_CsoQ6_jl4DCcC8Qs09jFljmWi96oo-HmWr-rFxTmKEoB9P2iTFQuyY9C7RvBUjE&usqp=CAE">
+        ₹1,225 American Diamond Party Wear Semi Bridal Jewellery Set
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://akruticart.com/wp-content/uploads/2023/06/lehenga-choli-cyan-blue-lehenga-choli-silk-saree-online-31906699116737.jpg">
+        ₹1,200 Cyan Blue Lehenga Choli for Girls With Dupatta Set of 3
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c1">
+        <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/ba4c3f0f-37f3-4101-a9bd-87a2bc20469023131244.jpg">
+        ₹1,899 Fire-Boltt Rocket Bluetooth Calling Smartwatch 
+      
+            <h5 class="jk">Free Size</h5>
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://m.media-amazon.com/images/I/811Q3zxqMkL._SX679_.jpg">
+        ₹699 Women's Heavy Cotton Unstitched Dress Material
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://kirdaram.com/wp-content/uploads/2023/02/WhatsAppImage2021-04-10at12.29.30PM.jpg">
+        ₹1,599 Peach Color Party Wear Lehenga Choli With Dupatta
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://m.media-amazon.com/images/I/51STzgHk8LL._SY679_.jpg">
+        ₹238 Selvia Women's Top for Girls
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://m.media-amazon.com/images/I/81iiPvmfJvL._SY741_.jpg">
+        ₹331  Women's Denim Jacket for Girls
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTbo0rfZj5s-1tJTwKc38YdYmRfbO8Ft5DIpanwXemtmqdxNrquYI8pNwp-kSjen4Ae4-WdYMY3hWnEm8E7tImzc6iytMjnI6hRaS9ill5hy5oCy4yPjJ8S&usqp=CAE">
+        ₹537
+        Imitation Fashion Gold-plated Jewel Set (Green, Bronze)
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSl_tMNlBunO5-ze8V6kxEWYPjIBEL7TgtkC-mb3MX2o0oJHJNLc-v2Z_pGomGFG8VMNlhDJBiaA3mv_MhmkVZKWGhIYmEK8_B9rluoiyo&usqp=CAE">
+        ₹1,150 	
+        Attractive Light Pink Color Designer Gown 
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVpo9609t9lEdcjzhAg1z4FBWguZFYd2TohOsUU9lI7N9kea0eQ8IVT_Pro9VUAYZb42grwYJTvMpK3l1ZRowpYrJZNj-I0Z4EZyo6uEs&usqp=CAE">
+        ₹2,055 	
+        Baby Blue Sequence Work Frill Saree With Koti
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ78x8mwZtvsB4iKkmE6SCjJMtalF9Sdf64NoBBV2_yJhTChyWJ1jgC-wkcsvHKLSjLDOE6grZir7Ud8utbU96cyroNBrMOCQQETPaZAoOg1eLgOVb9Z-K92g&usqp=CAE">
+        ₹5,999	
+        MOHEY Embellished Sequinned Net Saree 
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRMkKVCmnJiS0sgVt-g16_W50RVlhpDSA_9h_Un7K7_nTmvWdfYOwf3eTxYLcobKqtdnfY0EH73f6zGN2WNsr6oZlFfLXHOfIZwthuLvQY&usqp=CAE">
+        ₹499 Gruff Skinny Women Black Jeans
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c1">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRqUPmjqUxxF-FkE65qEJduQzheDBhvaCCXhy-ooKaCxJeGcZ-iWaR0bYKraQDOGNfsKTczgYzVyVlddpQU96WmGwV9BB_rbTNGnRwDmQpC&usqp=CAE">
+        ₹999 Office Coat and Pant for Women
+      
+            <h5 class="jk">Select Size:</h5>
+        
+            <!-- Checkbox for Size M -->
+            <label>
+                <input type="radio" name="size" value="M">
+                 M
+            </label>
+        
+            <!-- Checkbox for Size L -->
+            <label>
+                <input type="radio" name="size" value="L">
+                L
+            </label>
+        
+            <!-- Checkbox for Size S -->
+            <label>
+                <input type="radio" name="size" value="S">
+                 S
+            </label>
+        
+            <!-- Add a submit button or other form elements here -->
+            <input type="button" value="Buy now" class="s" id="w">
+            <input type="button" value="Add to cart" class="s" id="w" >
+        
+    </div>
+    <div class="abc" id="c2">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRMWKWR9nB1KbmlorzyTnCjok_FRCavMnsEfB0fWZQ1O0BeDcqD_srKTnJ_XKduf4oS70aSZ7ADYKP_WH0vmy--NSk3TkJbOudWLeBTT_5b&usqp=CAE">
+        ₹1,750 Simple suit design for girl with Dupatta
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >  </div>
+    <div class="abc" id="c3">
+        <img src="https://m.media-amazon.com/images/I/71NbkTQGTML._SY575_.jpg">
+        ₹79 Alloy Bracelet Decorated With Crystals for Girls & Women
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c4">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTGg4GFzPMCNalW0Xtj3kRp7a_xNABcgNaopLto2enoNy6eACt8q2FtWOB-yGlF4TB7U5R2n29s6zOCwt3y3VlWEDjlQR-FeJMek46Zqto&usqp=CAE">
+        ₹1,549 	
+        Saree mall Embellished Saree with Border For Women
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c5">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTdeGoX94B4QLdBztQCO3jZADuFPzPARdEPB2kmYE5WelITZHSxI26llu_EEg0aKwddPaatZpIToS47b0sBQWe_mLfDLpw9KQHlckbfGcUl66o7NO6fQpG-&usqp=CAE">
+        ₹749	
+       Regular Women Black Jeans
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c6">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRpzWPsoEnrGgowS3_0JoCZnYupxIHpu7ldVO27avaNSiQ4BmyPVTA9KsiCaP4z2oe_NPl-P1LxK0w2Wz5dMXm-e5Xcyn-MHzF6tNs6r_Jn0qYmZFvJtC6tPg&usqp=CAE">
+        ₹215 	
+        Round Neck Picco Full Sleeve Women Top
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c7">
+        <img src="https://m.media-amazon.com/images/I/916DgT0z7BL._SY625_.jpg">
+        ₹184 Jhumkas Pearl Studded Drop Earrings For Women 
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+    <div class="abc" id="c8">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRlBfm3QtjWDce3lmMuhFiEVQf_Ikt-gqKa7wwRHxIUa-QsqsBch1d94sgw2fP_8sPVb_ScflFyP8OTU-fqNd1l-8GDcNCtaTj82P9ru6SH&usqp=CAE">
+        ₹1,499	
+        Women's Chikankari Cotton Suit
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c9">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSn-RAaa93Pq9fXH6Ric39Lytb4CuLKwHByOEJ4S-O4Ag3wGnEejePdGY_Tj26CNa197icKVOJtz9tFVdYJQ-MkInNLNwVBId-_PVKXMUYj7W43VYcnb5yQ4w&usqp=CAE">
+        ₹2,810	
+        Designer Saree Party Wear Saree Dusty Pink for Women
+        <h5 class="jk">Free Size</h5>
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w" >
+
+    </div>
+    <div class="abc" id="c10">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQCsg5WsEVdueDYvHESFBPxNifuNLIpUcjH_h2TrFzX5l7hI--4X-Pg_5XaMlWt7Mfy2NzZ_sW0JjGIfiBN4K63AsY9j3X6o_Qhq1_fEDqHxvYVGN8jWMkBfA&usqp=CAE">
+        ₹976	
+        Blazer & Pants Set For Women
+        <h5 class="jk">Select Size:</h5>
+        
+        <!-- Checkbox for Size M -->
+        <label>
+            <input type="radio" name="size" value="M">
+             M
+        </label>
+    
+        <!-- Checkbox for Size L -->
+        <label>
+            <input type="radio" name="size" value="L">
+            L
+        </label>
+    
+        <!-- Checkbox for Size S -->
+        <label>
+            <input type="radio" name="size" value="S">
+             S
+        </label>
+    
+        <!-- Add a submit button or other form elements here -->
+  
+    <input type="button" value="Buy now" class="s" id="w">
+    <input type="button" value="Add to cart" class="s" id="w"  >
+
+    </div>
+
+    
+</body>
+</html>
